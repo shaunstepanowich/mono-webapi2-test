@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public string PostTest([FromBody]PostObject hello)
         {
-            return "Sucess!";
+            return "Sucess " + hello.Email;
         }
 
     }

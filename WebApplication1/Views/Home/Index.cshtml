@@ -14,11 +14,11 @@
 
 <script>
 
-
+/*
 jQuery.ajax({
     contentType : 'application/json; charset=utf-8'
 });
-
+*/
 $.ajax({
   type: "POST",
   url: '/api/Test/TestPost',
@@ -28,7 +28,8 @@ $.ajax({
   {
     console.log(result);
   },
-  dataType: 'json'
+  dataType: 'json',
+  contentType: "application/json"
 });
 
 </script>
