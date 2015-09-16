@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    
+}
+
+<html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<h2>Test</h2>
+
+<script>
+
+
+jQuery.ajax({
+    contentType : 'application/json; charset=utf-8'
+});
+
+$.ajax({
+  type: "POST",
+  url: '/api/Test/TestPost',
+  data: JSON.stringify({Email:'test@test.com',
+         Password: 'password'}),
+  success: function(result)
+  {
+    console.log(result);
+  },
+  dataType: 'json'
+});
+
+</script>
+
+</body>
+</html>
+
+
+
